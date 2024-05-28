@@ -4,4 +4,8 @@
 
 .container {
   display: grid;
+  gap: 25px;
+  /**grid-template-columns: repeat(2, 100px 200px);**/
+  /**grid-template-columns: repeat(4, 1fr); - 4 ел рівномірно розподілені**/
+  grid-template-columns: 100px repeat(4, 1fr) auto;
 }
