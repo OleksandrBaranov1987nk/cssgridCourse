@@ -4,4 +4,11 @@
 
 .container {
   display: grid;
+  border: 10px solid #000;
+  /***grid-template-columns: 1fr 1fr 1fr 1fr;**/
+  /*** 1фракция - (25%) одна ровная часть **/
+  grid-template-columns: 150px auto 2fr 1fr;
+  /** Auto - найбільша ширина контенту (ширина цієі колонки)**/
+
+  gap: 25px;
 }
