@@ -4,4 +4,21 @@
 
 .container {
   display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(3,150px);
+  border: 10px solid #000;
+  height: 500px;
+  /*justify-items: (start, end, center, stretch); регулирует по горизонтали
+  положение элементи в колонке**/
+  /**align-items: (start, end, center, stretch); регулирует по вертикали**/
+  /**justify-content: (space-around, space-betwin, space-evenly,
+  start, end, center); працюе коли ЗАГАЛЬНА ШИРИНА КОЛОНОК 
+  МЕНША НІЖ ЗАГАЛЬНА ШИРИНА КОНТЕЙНЕРА**/
+  /**align-self: ; все тоже самое только по оси у**/
+
+}
+.item-4 {
+  justify-self: end; /**Робить все теж саме але для окремого елемента
+  в сітці**/
+  align-self: end;
 }
